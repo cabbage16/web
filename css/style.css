@@ -1,0 +1,83 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section {
+        flex: 1;
+        margin: 0 1rem;
+    }
+}
+
+/* 접근성 스타일 */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
